@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{89AF369E-F58E-B539-FEA6-40106A051C9B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\benchmark">
+      <UniqueIdentifier>{A389D3A5-0FA0-D13B-5817-5D5DC46CA2C3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{2DAB880B-99B4-887C-2230-9F7C8E38947C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="benchmark\include\benchmark\benchmark.h">
+      <Filter>include\benchmark</Filter>
+    </ClInclude>
+    <ClInclude Include="benchmark\include\benchmark\export.h">
+      <Filter>include\benchmark</Filter>
+    </ClInclude>
+    <ClInclude Include="benchmark\src\arraysize.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="benchmark\src\benchmark_api_internal.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="benchmark\src\benchmark_register.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="benchmark\src\benchmark_runner.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="benchmark\src\check.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="benchmark\src\colorprint.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="benchmark\src\commandlineflags.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="benchmark\src\complexity.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="benchmark\src\counter.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="benchmark\src\cycleclock.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="benchmark\src\internal_macros.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="benchmark\src\log.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="benchmark\src\mutex.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="benchmark\src\perf_counters.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="benchmark\src\re.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="benchmark\src\statistics.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="benchmark\src\string_util.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="benchmark\src\thread_manager.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="benchmark\src\thread_timer.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="benchmark\src\timers.h">
+      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="benchmark\src\benchmark.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="benchmark\src\benchmark_api_internal.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="benchmark\src\benchmark_main.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="benchmark\src\benchmark_name.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="benchmark\src\benchmark_register.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="benchmark\src\benchmark_runner.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="benchmark\src\check.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="benchmark\src\colorprint.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="benchmark\src\commandlineflags.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="benchmark\src\complexity.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="benchmark\src\console_reporter.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="benchmark\src\counter.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="benchmark\src\csv_reporter.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="benchmark\src\json_reporter.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="benchmark\src\perf_counters.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="benchmark\src\reporter.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="benchmark\src\statistics.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="benchmark\src\string_util.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="benchmark\src\sysinfo.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="benchmark\src\timers.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

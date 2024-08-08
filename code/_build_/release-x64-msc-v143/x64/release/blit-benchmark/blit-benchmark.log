@@ -1,0 +1,20 @@
+﻿  main.cpp
+C:\Sandra D\aUNI 23-24\Comp graph\og\cw1\cw1\blit-benchmark\main.cpp(66,60): warning C4267: 'argument': conversion from 'size_t' to 'ImageRGBA::Index', possible loss of data
+C:\Sandra D\aUNI 23-24\Comp graph\og\cw1\cw1\blit-benchmark\main.cpp(66,57): warning C4267: 'argument': conversion from 'size_t' to 'ImageRGBA::Index', possible loss of data
+C:\Sandra D\aUNI 23-24\Comp graph\og\cw1\cw1\blit-benchmark\main.cpp(82,41): warning C4244: 'argument': conversion from 'float' to 'Surface::Index', possible loss of data
+C:\Sandra D\aUNI 23-24\Comp graph\og\cw1\cw1\blit-benchmark\main.cpp(82,30): warning C4244: 'argument': conversion from 'float' to 'Surface::Index', possible loss of data
+C:\Sandra D\aUNI 23-24\Comp graph\og\cw1\cw1\blit-benchmark\main.cpp(119,46): warning C4267: 'argument': conversion from 'size_t' to 'ImageRGBA::Index', possible loss of data
+C:\Sandra D\aUNI 23-24\Comp graph\og\cw1\cw1\blit-benchmark\main.cpp(119,43): warning C4267: 'argument': conversion from 'size_t' to 'ImageRGBA::Index', possible loss of data
+C:\Sandra D\aUNI 23-24\Comp graph\og\cw1\cw1\blit-benchmark\main.cpp(124,32): warning C4267: 'argument': conversion from 'size_t' to 'Surface::Index', possible loss of data
+C:\Sandra D\aUNI 23-24\Comp graph\og\cw1\cw1\blit-benchmark\main.cpp(124,29): warning C4267: 'argument': conversion from 'size_t' to 'Surface::Index', possible loss of data
+C:\Sandra D\aUNI 23-24\Comp graph\og\cw1\cw1\blit-benchmark\main.cpp(160,50): warning C4267: 'argument': conversion from 'size_t' to 'ImageRGBA::Index', possible loss of data
+C:\Sandra D\aUNI 23-24\Comp graph\og\cw1\cw1\blit-benchmark\main.cpp(270,60): warning C4267: 'argument': conversion from 'size_t' to 'ImageRGBA::Index', possible loss of data
+C:\Sandra D\aUNI 23-24\Comp graph\og\cw1\cw1\blit-benchmark\main.cpp(270,57): warning C4267: 'argument': conversion from 'size_t' to 'ImageRGBA::Index', possible loss of data
+C:\Sandra D\aUNI 23-24\Comp graph\og\cw1\cw1\blit-benchmark\main.cpp(286,41): warning C4244: 'argument': conversion from 'float' to 'Surface::Index', possible loss of data
+C:\Sandra D\aUNI 23-24\Comp graph\og\cw1\cw1\blit-benchmark\main.cpp(286,30): warning C4244: 'argument': conversion from 'float' to 'Surface::Index', possible loss of data
+C:\Sandra D\aUNI 23-24\Comp graph\og\cw1\cw1\blit-benchmark\main.cpp(319,46): warning C4267: 'argument': conversion from 'size_t' to 'ImageRGBA::Index', possible loss of data
+C:\Sandra D\aUNI 23-24\Comp graph\og\cw1\cw1\blit-benchmark\main.cpp(319,43): warning C4267: 'argument': conversion from 'size_t' to 'ImageRGBA::Index', possible loss of data
+C:\Sandra D\aUNI 23-24\Comp graph\og\cw1\cw1\blit-benchmark\main.cpp(324,32): warning C4267: 'argument': conversion from 'size_t' to 'Surface::Index', possible loss of data
+C:\Sandra D\aUNI 23-24\Comp graph\og\cw1\cw1\blit-benchmark\main.cpp(324,29): warning C4267: 'argument': conversion from 'size_t' to 'Surface::Index', possible loss of data
+C:\Sandra D\aUNI 23-24\Comp graph\og\cw1\cw1\blit-benchmark\main.cpp(355,50): warning C4267: 'argument': conversion from 'size_t' to 'ImageRGBA::Index', possible loss of data
+  blit-benchmark.vcxproj -> C:\Sandra D\aUNI 23-24\Comp graph\og\cw1\cw1\bin\blit-benchmark-release-x64-msc-v143.exe

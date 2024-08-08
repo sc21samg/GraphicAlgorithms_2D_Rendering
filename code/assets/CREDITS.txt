@@ -1,0 +1,12 @@
+The earth image (earth.png) is originally from the JPL (Jet Propulsion
+Laboratory) "Looking at Earth: From 100 miles to 100 million miles" gallery:
+https://explorer1.jpl.nasa.gov/galleries/earth-from-space/
+The images are released under the "JPL Image Use Policiy", which permits use
+of the images wor any purpose without prior permission (subject to special
+cases listed on the website). See 
+https://www.jpl.nasa.gov/jpl-image-use-policy
+for further information.
+
+The image has been edited slightly, by adding an alpha mask around the earth
+and has then been scaled to a lower resolution, appropriate for the use in the
+coursework.

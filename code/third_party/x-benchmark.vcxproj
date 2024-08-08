@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="debug|x64">
+      <Configuration>debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="release|x64">
+      <Configuration>release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F5B662F4-616C-DBE9-EA60-D5C05615D2ED}</ProjectGuid>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>x-benchmark</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|x64'">
+    <OutDir>..\lib\</OutDir>
+    <IntDir>..\_build_\debug-x64-msc-v143\x64\debug\x-benchmark\</IntDir>
+    <TargetName>x-benchmark-debug-x64-msc-v143</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|x64'">
+    <OutDir>..\lib\</OutDir>
+    <IntDir>..\_build_\release-x64-msc-v143\x64\release\x-benchmark\</IntDir>
+    <TargetName>x-benchmark-release-x64-msc-v143</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS=1;_SCL_SECURE_NO_WARNINGS=1;_DEBUG=1;BENCHMARK_STATIC_DEFINE=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>stb\include;glad\include;glfw\include;catch2\include;benchmark\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/utf-8 /permissive- /wd4267 %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>OpenGL32.lib;shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/IGNORE:4006 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS=1;_SCL_SECURE_NO_WARNINGS=1;NDEBUG=1;BENCHMARK_STATIC_DEFINE=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>stb\include;glad\include;glfw\include;catch2\include;benchmark\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/utf-8 /permissive- /wd4267 %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>OpenGL32.lib;shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/IGNORE:4006 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="benchmark\include\benchmark\benchmark.h" />
+    <ClInclude Include="benchmark\include\benchmark\export.h" />
+    <ClInclude Include="benchmark\src\arraysize.h" />
+    <ClInclude Include="benchmark\src\benchmark_api_internal.h" />
+    <ClInclude Include="benchmark\src\benchmark_register.h" />
+    <ClInclude Include="benchmark\src\benchmark_runner.h" />
+    <ClInclude Include="benchmark\src\check.h" />
+    <ClInclude Include="benchmark\src\colorprint.h" />
+    <ClInclude Include="benchmark\src\commandlineflags.h" />
+    <ClInclude Include="benchmark\src\complexity.h" />
+    <ClInclude Include="benchmark\src\counter.h" />
+    <ClInclude Include="benchmark\src\cycleclock.h" />
+    <ClInclude Include="benchmark\src\internal_macros.h" />
+    <ClInclude Include="benchmark\src\log.h" />
+    <ClInclude Include="benchmark\src\mutex.h" />
+    <ClInclude Include="benchmark\src\perf_counters.h" />
+    <ClInclude Include="benchmark\src\re.h" />
+    <ClInclude Include="benchmark\src\statistics.h" />
+    <ClInclude Include="benchmark\src\string_util.h" />
+    <ClInclude Include="benchmark\src\thread_manager.h" />
+    <ClInclude Include="benchmark\src\thread_timer.h" />
+    <ClInclude Include="benchmark\src\timers.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="benchmark\src\benchmark.cc" />
+    <ClCompile Include="benchmark\src\benchmark_api_internal.cc" />
+    <ClCompile Include="benchmark\src\benchmark_main.cc" />
+    <ClCompile Include="benchmark\src\benchmark_name.cc" />
+    <ClCompile Include="benchmark\src\benchmark_register.cc" />
+    <ClCompile Include="benchmark\src\benchmark_runner.cc" />
+    <ClCompile Include="benchmark\src\check.cc" />
+    <ClCompile Include="benchmark\src\colorprint.cc" />
+    <ClCompile Include="benchmark\src\commandlineflags.cc" />
+    <ClCompile Include="benchmark\src\complexity.cc" />
+    <ClCompile Include="benchmark\src\console_reporter.cc" />
+    <ClCompile Include="benchmark\src\counter.cc" />
+    <ClCompile Include="benchmark\src\csv_reporter.cc" />
+    <ClCompile Include="benchmark\src\json_reporter.cc" />
+    <ClCompile Include="benchmark\src\perf_counters.cc" />
+    <ClCompile Include="benchmark\src\reporter.cc" />
+    <ClCompile Include="benchmark\src\statistics.cc" />
+    <ClCompile Include="benchmark\src\string_util.cc" />
+    <ClCompile Include="benchmark\src\sysinfo.cc" />
+    <ClCompile Include="benchmark\src\timers.cc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

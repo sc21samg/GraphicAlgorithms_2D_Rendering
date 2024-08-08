@@ -1,0 +1,7 @@
+﻿  draw.cpp
+  image.cpp
+  shape.cpp
+  surface.cpp
+C:\Sandra D\aUNI 23-24\Comp graph\og\cw1\cw1\draw2d\image.cpp(99,41): warning C4244: 'argument': conversion from 'float' to 'Surface::Index', possible loss of data
+C:\Sandra D\aUNI 23-24\Comp graph\og\cw1\cw1\draw2d\image.cpp(99,30): warning C4244: 'argument': conversion from 'float' to 'Surface::Index', possible loss of data
+  draw2d.vcxproj -> C:\Sandra D\aUNI 23-24\Comp graph\og\cw1\cw1\lib\draw2d-release-x64-msc-v143.lib
