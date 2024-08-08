@@ -5,10 +5,13 @@ GraphicAlgorithms_2D_Rendering
 This repository contains implementations of various fundamental algorithms used in 2D computer graphics. It includes detailed code and explanations for line drawing using Bresenham's algorithm, 2D rotation, drawing triangles using scanline filling and barycentric interpolation, and image blitting with alpha masking. These algorithms are essential for rendering graphics in computer games, simulations, and other graphical applications.
 
 ## Features
-Line Drawing: Implementation of Bresenham's line drawing algorithm for rendering lines with high efficiency and accuracy.
-2D Rotation: Functions to perform 2D rotation using rotation matrices.
-Triangle Rasterization: Methods for drawing triangles using scanline filling and barycentric interpolation, handling various types of triangles including flat-topped and flat-bottomed.
-Image Blitting: Techniques for blitting images onto a surface with alpha masking for transparency.
+### Line Drawing: Implementation of Bresenham's line drawing algorithm for rendering lines with high efficiency and accuracy.
+
+### 2D Rotation: Functions to perform 2D rotation using rotation matrices.
+
+### Triangle Rasterization: Methods for drawing triangles using scanline filling and barycentric interpolation, handling various types of triangles including flat-topped and flat-bottomed.
+
+### Image Blitting: Techniques for blitting images onto a surface with alpha masking for transparency.
 Performance Benchmarks: Benchmark tests comparing the efficiency of different line drawing and blitting methods.
 
 
