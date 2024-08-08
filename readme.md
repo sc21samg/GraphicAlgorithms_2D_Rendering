@@ -1,53 +1,39 @@
-COMP3811 Coursework 1
+GraphicAlgorithms_2D_Rendering
 =====================
 
-Base project for Coursework 1 in COMP3811. Do not re-distribute the code
-outside of Minerva.
+## Overview
+This repository contains implementations of various fundamental algorithms used in 2D computer graphics. It includes detailed code and explanations for line drawing using Bresenham's algorithm, 2D rotation, drawing triangles using scanline filling and barycentric interpolation, and image blitting with alpha masking. These algorithms are essential for rendering graphics in computer games, simulations, and other graphical applications.
 
-## Updates
-
-There are a few updates to the base project. In particular
-- Command line flags to define window / framebuffer resolution
-- Window is resizable
-
-Command line flags:
---help          : print help and exit
---fbshift=N     : scale framebuffer resolution by 1/2^N relative to the window size
---geometry=WxH  : create window with width W and height H (default is 1280x720)
-
-Note: the shift is unsigned. The application will not run if the shift is large
-enough to reduce the framebuffer size below 1.
-
-Examples:
-
-$ bin/main-debug-x64-gcc.exe --help
-(prints help and exits)
-
-$ bin/main-debug-x64-gcc.exe --fbshift=1 
-Creates a window with the default size 1280x720. Surface/framebuffer resolution
-is 1/2 of the window's renderable area (so around 1280/2 x 720/2, minus
-whatever space the OS's default window decorations take up). The surface's 
-contents are scaled up to the window's size using nearest filtering.
-
-$ bin/main-debug-x64-gcc.exe --geometry=1920x1080
-Creates a window with size 1920x1080. 
-
-$ bin/main-debug-x64-gcc.exe --geometry=1920x1080 --fbshift=1
-Creates a window with the default size 1920x1080. Surface/framebuffer resolution
-is 1/2 of the window's renderable area (so around 1920/2 x 1080/2, minus
-whatever space the OS's default window decorations take up). The surface's 
-contents are scaled up to the window's size using nearest filtering.
+## Features
+Line Drawing: Implementation of Bresenham's line drawing algorithm for rendering lines with high efficiency and accuracy.
+2D Rotation: Functions to perform 2D rotation using rotation matrices.
+Triangle Rasterization: Methods for drawing triangles using scanline filling and barycentric interpolation, handling various types of triangles including flat-topped and flat-bottomed.
+Image Blitting: Techniques for blitting images onto a surface with alpha masking for transparency.
+Performance Benchmarks: Benchmark tests comparing the efficiency of different line drawing and blitting methods.
 
 
-## Notes on tests
+## Steps
+1. Setting Pixels
+- Explanation of Screen Locations: Coordinates on the screen are defined, with (0, 0) at the bottom left and (w, h) at the top right.
+Pixel Setting Functionality: Ensures proper placement of pixels within screen boundaries.
+2. Drawing Lines
+- Bresenham's Line Drawing Algorithm: Efficiently draws a line between two points using integer arithmetic and bit shifting, maintaining a single-pixel width.
+3. 2D Rotation
+- Rotation Matrices: Implements 2x2 matrix multiplication for rotating objects around the origin using cosine and sine functions.
+4. Drawing Triangles
+- Scanline Filling Method: Rasterizes triangles by filling horizontal rows of pixels, handling various triangle types and ensuring correct color interpolation.
+5. Barycentric Interpolation
+- Triangle Interpolation: Efficiently interpolates vertex colors within triangles using barycentric coordinates, allowing for smooth color gradients.
+6. Blitting Images
+- Alpha Masking: Implements image blitting with alpha transparency, ensuring only opaque or semi-opaque pixels are copied to the target surface.
+7. Testing Lines
+- Various Tests: Includes tests for intersecting lines, parallel lines, vertical lines, consecutive lines, and implicit line drawing to ensure accuracy and robustness.
+8. Testing Triangles
+- Triangle Tests: Tests for scalene triangles, fully off-screen triangles, and adjacent triangles to verify correct rasterization and color interpolation.
+9. Benchmarking Blitting
+- Performance Tests: Benchmarks different blitting methods using large and small images, comparing execution times and bytes processed per second to identify the most efficient technique.
+10. Benchmarking Line Drawing
+- Algorithm Comparison: Benchmarks Bresenham's line algorithm, DDA (float and integer) algorithms across various scenarios, including straight lines, clipping lines, and steep diagonal lines, to evaluate performance.
 
-The included tests are a small subset of possible tests. They are not meant to
-be exhaustive, but rather demonstrate some possible things that one can check
-for the. The assignment asks you to come up with additional tests.
-
-The included tests are also written in a way that leaves some ambiguity with
-respect to implementations. The assignment doesn't specify all things (one
-example is rounding modes), which are left up to the implementer. 
-
-Once you have determined a certain way of drawing, you can perform more
-selective testing. (E.g., is a specific pixel set to the expected color?)
+## Conclusion
+This project covers essential techniques in 2D computer graphics, with a focus on accuracy, efficiency, and robustness. The implementation includes thorough testing and benchmarking to ensure high performance across different scenarios. The design and tests provide a solid foundation for further development in computer graphics.
