@@ -24,8 +24,10 @@ Pixel Setting Functionality: Ensures proper placement of pixels within screen bo
   ![Alt text](https://github.com/sc21samg/GraphicAlgorithms_2D_Rendering/blob/main/git%201.4.png)
 - Scanline Filling Method: Rasterizes triangles by filling horizontal rows of pixels, handling various triangle types and ensuring correct color interpolation.
 5. Barycentric Interpolation
+  ![Alt text](https://github.com/sc21samg/GraphicAlgorithms_2D_Rendering/blob/main/git%201.5.png)
 - Triangle Interpolation: Efficiently interpolates vertex colors within triangles using barycentric coordinates, allowing for smooth color gradients.
 6. Blitting Images
+  ![Alt text](https://github.com/sc21samg/GraphicAlgorithms_2D_Rendering/blob/main/git%201.6.png)
 - Alpha Masking: Implements image blitting with alpha transparency, ensuring only opaque or semi-opaque pixels are copied to the target surface.
 7. Testing Lines
 - Various Tests: Includes tests for intersecting lines, parallel lines, vertical lines, consecutive lines, and implicit line drawing to ensure accuracy and robustness.
