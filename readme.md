@@ -21,6 +21,7 @@ Pixel Setting Functionality: Ensures proper placement of pixels within screen bo
 3. 2D Rotation
 - Rotation Matrices: Implements 2x2 matrix multiplication for rotating objects around the origin using cosine and sine functions.
 4. Drawing Triangles
+  https://github.com/sc21samg/GraphicAlgorithms_2D_Rendering/blob/6c30fba913d27c596953298d403ddcb93865c37e/git%201.4.png
 - Scanline Filling Method: Rasterizes triangles by filling horizontal rows of pixels, handling various triangle types and ensuring correct color interpolation.
 5. Barycentric Interpolation
 - Triangle Interpolation: Efficiently interpolates vertex colors within triangles using barycentric coordinates, allowing for smooth color gradients.
